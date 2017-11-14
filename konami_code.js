@@ -2,18 +2,17 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init() {
   // Write your JavaScript code inside the init() function
-  let index = []
+  let index = 0
 
   function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which)
-    if(index.length<10){
-      index.push(key)
-    } else if(index.length === 10) {
-      index.shift()
-      index.push(key)
+    if(key === code[i]){
+      i++
+    } else {
+      index = 0
     }
     console.log(index)
-    if(index === code){
+    if(index === 10){
       alert("Hurray!")
     }
   }
