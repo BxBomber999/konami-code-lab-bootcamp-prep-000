@@ -17,4 +17,5 @@ function init() {
       alert("Hurray!")
     }
   }
+  console.log("Init success")
 }
