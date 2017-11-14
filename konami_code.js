@@ -4,7 +4,7 @@ function init() {
   // Write your JavaScript code inside the init() function
   let index = []
 
-  function onKeyDownHandler(e) {
+  var handle = function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which)
     console.log(key)
     if(index.length<10){
@@ -17,5 +17,6 @@ function init() {
       alert("Hurray!")
     }
   }
+  
   console.log("Init success")
 }
