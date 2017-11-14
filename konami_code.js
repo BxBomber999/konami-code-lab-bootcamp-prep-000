@@ -6,7 +6,7 @@ function init() {
 
   function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which)
-    console.log(key)
+    console.log(index)
     if(index.length<10){
       index.push(key)
     } else if(index.length === 10) {
