@@ -18,7 +18,7 @@ function init() {
     }
   }
 
-  document.body.addEventListener('keydown', onKeyDownHandler(e))
+  document.body.addEventListener('keydown', onKeyDownHandler)
 
   console.log("Init success")
 }
