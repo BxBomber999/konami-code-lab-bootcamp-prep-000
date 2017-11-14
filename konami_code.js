@@ -5,7 +5,8 @@ function init() {
   let index = []
 
   function onKeyDownHandler(e) {
-    const key = (e.detail || e.which)
+    const key = parseInt(e.detail || e.which)
+    console.log(key)
     if(index.length<10){
       index.push(key)
     } else if(index.length === 10) {
@@ -15,5 +16,5 @@ function init() {
     if(index === code){
       alert("Hurray!")
     }
-  }  
+  }
 }
